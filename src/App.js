@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import "./App.css";
 import  jsonSapros from './tegi.json'
 
@@ -89,7 +89,6 @@ const App = () => {
 
   const searchSubmit =(e)=>{
  e.preventDefault()
-    setTodo(e.target.innerText)
     prevTodos(todos)
     let updatedTodos = todos.filter(e=> e.teg === todo )
       if (updatedTodos.length){
